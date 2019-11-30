@@ -14,7 +14,7 @@
                               <h3 class="txt-desc">
                                 Here's Why Public Wifi is a <br> Public Health Hazard
                               </h3>
-                              <small class="small-txt">
+                              <small class="color-gray">
                                 FEARTURED STORY
                               </small>
                           </div>
@@ -45,7 +45,7 @@
                                       </div>
                                   </div>
                                   <h4> {{ article.title }}</h4>
-                                  <span class="txt-centent">
+                                  <span class="color-gray">
                                     {{article.content}}.
                                   </span>
                                   <h5 class="txt-author">
@@ -59,7 +59,7 @@
                               <div *ngIf="articles.length-2 == index+1" class="row div-inspired d-flex align-items-center p-5 mt-5 mb-4 justify-content-center">
                                 <div class="col-12 d-flex justify-content-center"> <h4 class="inspired">Inspired?</h4></div>
                                 <div class="col-12 d-flex justify-content-center">  <h5 class="shared-txt">Share your stories and ideas using</h5></div>
-                                <div class="col-12 d-flex justify-content-center">  <h5 class="best-txt">the best editor online</h5></div>
+                                <div class="col-12 d-flex justify-content-center">  <h5 class="shared-txt">the best editor online</h5></div>
                                 <div class="col-12 d-flex justify-content-center">  <button class="btn-start" nz-button nzType="default">Start writing</button> </div>       
                               </div>
                             </div>                       
@@ -87,7 +87,7 @@
                                <a class="txt-title-article" href="https://ng.ant.design">{{ item.title }} </a>
                              </ng-template>
                              <ng-template #nzDescription>
-                               <div class="border-bottom pb-2 txt-name-author">
+                               <div class="border-bottom pb-2 color-gray">
                                   {{ item.author }} 
                                </div>
                                  
@@ -113,7 +113,7 @@
                       
                         </div>
                         <h5 class="h5-title" [ngClass]="{'h-item-1':(index == 0 || index == 3)}"> {{ article.title }}</h5>
-                        <span class="txt-centent" *ngIf="index == 0 || index == 3">
+                        <span class="color-gray" *ngIf="index == 0 || index == 3">
                           {{article.content}}.
                         </span>
                         <h5 class="txt-author">
@@ -125,7 +125,7 @@
                     </div>
                     <!-- follow barak obama -->
                     <div *ngIf="index+1 == articles.length-3" class="div-follow p-5 img-background">
-                      <small class="small-txt">
+                      <small class="color-gray">
                         FEARTURED WRITER
                       </small>
                       <h3>
@@ -155,7 +155,7 @@
                               <a class="txt-title-article" href="https://ng.ant.design">{{ itemm.title }} </a>
                             </ng-template>
                             <ng-template #nzDescription>
-                              <div class="pb-2 txt-name-author">
+                              <div class="pb-2 color-gray">
                                  {{ itemm.author }} 
                               </div>     
                             </ng-template>
