@@ -13,7 +13,7 @@ Then just run npm install in the project's root.
 
 ## Start project
 
-Run npm start for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Built With
 
@@ -28,7 +28,6 @@ Run npm start for a dev server. Navigate to http://localhost:4200/. The app will
 ## Versioning
 
 ## Authors
-Listez le(s) auteur(s) du projet ici !
 * **Ossama ATTALIB**
 
 
