@@ -45,6 +45,7 @@ export class PeopleDetailsComponent implements OnInit {
 						}
 					});
 				});
+				console.log('this.films',this.films)
 		});
 	}
 

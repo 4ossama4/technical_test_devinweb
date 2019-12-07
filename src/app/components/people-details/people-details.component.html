@@ -1,8 +1,8 @@
-<div *ngIf="people" class="body-style">  
+<div *ngIf="people"  class="body-style">  
 		<div class="container">
 			<div style="padding-top: 150px;" class="row">
 				<div class="col-md-12 col-12 col-lg-4 pb-4">
-					<h5 class="text-white c-promo-title f-bold">
+					<h5 style="font-size: 32px;" class="text-white  f-bold">
 						People space
 						<br>{{people.name}}
 					</h5>
@@ -26,7 +26,66 @@
 						</nz-tab>
 						<nz-tab nzTitle="Films">
 							<div class="tab-body">
-								Content of Tab Pane 2
+								<div *ngFor="let film of films" class="col-md-12 p-2">
+									<div class="box-film p-1">
+										<div class="row">
+											<!-- logo film -->
+											<div class="col-lg-3 col-md-3 col-4 pr-0 mr-0">
+												<figure class="text-center-img m-2" >
+													<a (click)="getOfferDetails(car,false)">
+														<img src="assets/layout/img/films/2.jpg" class="img-film">							
+													</a>
+												</figure>
+											</div>
+											<!-- film title -->
+											<div class="col-lg-9 col-md-9 col-8 p-2">
+												<div class="row">
+													<div class="col-12">
+														<h4 class="car-name mb-0">
+															<p class="f-bold c-txt-purple truncateLongTexts mb-0">
+																{{ film.title }} 
+															</p>
+														</h4>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-12">
+														<!-- <ul class="row car-caracteristics">
+															<li  class="col-3 m-0 p-0 caracteristics-li" >
+																<span class="icon-solid jerrycan"></span>
+																fffff
+															</li>
+									
+															<li class="col-4 m-0 p-0 caracteristics-li" >
+																<span class="icon-solid car-gears-automatic"></span>
+																{{ 'SEARCH_RESULT.AUTOMATIC_GEARBOX' | translate }}
+															</li>
+										
+															<li class="col-4 m-0 p-0 caracteristics-li" >
+																<span class="icon-solid car-gears"></span>
+																{{ 'SEARCH_RESULT.MANUAL_GEARBOX' | translate }}
+															</li>
+										
+															<li class="col-5 m-0 p-0 caracteristics-li" title="{{ 'SEARCH_RESULT.AIR_CONDITIONING' | translate }}">
+																<span class="icon-solid air-conditioning"></span>
+																ffff
+															</li>
+															<li class="col-3 m-0 p-0 caracteristics-li">
+																<span class="icon-solid car-seat"></span>
+																dddd
+															</li>
+															<li class="col-4 m-0 p-0 caracteristics-li">
+																<span class="icon-solid car-door"></span>
+																ddd
+															</li>
+														</ul> -->
+													</div>	
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
 							</div>
 						</nz-tab>
 						 

@@ -1,9 +1,46 @@
 .body-style{
     background-color: rgb(26, 27, 75);
-    height:100vh ;
+ height: 100vh;
 }
 .tab-body{
     background-color: white;
-    border-radius: 13px;;
+    border-radius: 13px;
+    overflow-y: scroll;
+    height: 470px;    
+    overflow-x: hidden;
+    
+}
+
+.text-center-img{
+    text-align: center;
+}
+
+.img-film{
+    width: auto;
+    height: auto !important;
+    max-height: 195px;
+    border-radius: 13px;
+}
+.box-film{
+    border: 1px solid ;
+    border-radius: 13px;
+}
+
+@media (max-width: 1024px) {
+    .tab-body{
+        height: 400px; 
+    }
+    .img-film{
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tab-body{
+        height: 250px; 
+    }
+    .text-center-img{
+        text-align: left;
+    }
 }
 

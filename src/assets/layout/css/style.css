@@ -21,6 +21,13 @@
   font-family: 'gilroy-bold';
 }
 
+.c-small-left-hr{
+  width: 70px; 
+  height: 8px;
+  border-radius: 20px;
+  background-color:#1c1b4b;
+}
+
 .marker_info,
 body {
   font-family: Poppins, Helvetica, sans-serif;
