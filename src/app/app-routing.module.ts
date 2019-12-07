@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ContentComponent } from './components/content/content.component';
+import { PeoplesComponent } from './components/peoples/peoples.component';
+import { PeopleDetailsComponent } from './components/people-details/people-details.component';
 
 
 const routes: Routes = [
     { 
         path: '', 
-        component: ContentComponent,
+        component: PeoplesComponent,
+    },
+    { 
+        path: 'people/:id', 
+        component: PeopleDetailsComponent
     }
 ];
 
@@ -20,5 +25,5 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 export const RoutingComponents = [
-    ContentComponent,
+    PeoplesComponent,
 ];

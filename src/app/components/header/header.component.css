@@ -1,0 +1,94 @@
+.style-header {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  background: rgb(27, 27, 75);
+  color: white;
+}  
+.logout{
+  font-weight: 600;
+    color: #e01272!important;
+}
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+  opacity: 0 !important;
+}
+
+.signin-link:hover, .signin-link:focus {
+  color: #e01272 !important;
+} 
+
+
+.logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+nz-header {
+  position: fixed;
+  width: 100%;
+}
+
+[nz-menu] {
+  line-height: 64px;
+}
+
+nz-content {
+  padding: 0 50px;
+  margin-top: 64px;
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+}
+
+.inner-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 380px;
+}
+
+.header-item:hover, .header-item:focus {
+  /* color: #e01272 !important; */
+  color: #e0e0e0 !important;
+}
+
+.btn-more-container {
+  position: relative;
+  height: 100%;
+}
+
+.btn-more {
+  float: right;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn-signup{
+  border: 1px solid #e01372;
+  border-radius: 11px;
+  background-color:#e01372!important;
+  font-weight: bold;
+  border-color: #e01372 !important;
+  font-size: 16px;
+}
+.txt-item{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.ul-background-mobile{
+  background-color: rgb(77, 65, 148) !important;
+  border-right: none!important;
+}
+.txt-item-header{
+  color: #fff;
+  font-weight: bold;
+  font-size: 27px;
+}
+.icon-cancel-header{
+  color: #fff;
+  font-size: 22px;
+}
+

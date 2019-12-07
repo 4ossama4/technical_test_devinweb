@@ -1,0 +1,19 @@
+.forgot-password {
+    color: #4d4194 !important;
+    text-decoration: underline !important;
+    transition: all 0s;
+}
+
+.forgot-password:hover, .forgot-password:focus {
+    color: #e01372 !important;
+}
+
+.signin-link {
+    color: #e01372 !important;
+    text-decoration: underline !important;
+    transition: all 0s;
+}
+
+.signin-link:hover, .signin-link:focus {
+    color: #4d4194 !important;
+}

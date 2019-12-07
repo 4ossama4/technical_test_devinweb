@@ -1,0 +1,77 @@
+<form >
+	<div class="sign-in-wrapper">
+
+		<div class="row">
+			<div class="col-6">
+				<a  class="social_bt facebook btn-facebook c-txt-white">
+					Facebook
+				</a>
+			</div>
+
+			<div class="col-6">
+				<a  class="social_bt google btn-facebook c-txt-white">
+					Google
+				</a>
+			</div>
+		</div>
+
+		<nz-divider nzText="Ou"></nz-divider>
+
+		<div class="row mt-3">
+			<div class="col-12">
+				<div class="form-group">
+					<input nz-input
+						nzSize="large"
+						type="email"
+						class="form-control"
+						name="email"
+						id="email"
+						placeholder="E-mail"
+						required autofocus email>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="form-group">
+					<nz-input-group nzSize="large">
+						<input
+							nz-input
+							type="password"
+							class="form-control"
+							name="password"
+							id="password" 
+							placeholder="{{ 'HEADER.PASSWORD' | translate }}" required/>
+					</nz-input-group>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 text-right">
+				<a id="forgot"  class="forgot-password">
+					Mot de passe oublié ?
+				</a>
+			</div>
+	
+			<div class="col-12 mt-3">
+				<button type="submit" nzBlock nz-button nzType="primary" [nzSize]="'large'"  style="height: 2.5rem;">
+					Se connecter
+				</button>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<div class="col-12">
+				Vous n'avez pas de compte?
+				<strong>
+					<a class="signin-link">
+							S'inscrire
+					</a>
+				</strong>
+			</div>
+		</div>
+
+	</div>
+</form>

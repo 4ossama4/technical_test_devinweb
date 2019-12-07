@@ -1,0 +1,25 @@
+.txt-footer{
+    color: #484c9f;
+    font-weight: bold;
+    font-size: 11px;
+}
+.txt-mobile-desktope{
+    justify-content: flex-start!important;
+}
+
+.txt-mobile-desktope-right{
+    justify-content: flex-end!important;
+}
+
+@media only screen and (max-width: 425px){
+	.txt-mobile-desktope{
+        justify-content: center!important;
+    }   
+    .txt-mobile-desktope-right{
+        justify-content: center!important;
+        border-top: 1px solid #dee2e6;
+        padding-top: 10px;
+    }
+  }
+ 
+
