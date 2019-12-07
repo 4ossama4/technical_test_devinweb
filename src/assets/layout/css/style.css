@@ -552,26 +552,6 @@ footer hr {
   opacity: 1;
 }
 
-
-
-
-
-.box_grid figure small,
-.box_list a.wish_bt {
-  background-color: #000;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  line-height: 1;
-}
-
-
-
-
-
-
-
-
 .box_list {
   background-color: #fff;
   display: block;
@@ -795,82 +775,27 @@ a.boxed_list {
 
 
 #cookie-bar,
-#toTop,
 .divider,
 a.social_bt {
   text-align: center;
 }
 
-
-#toTop,
-.colors li a,
-.my-toggle,
-.switchery,
-a.social_bt {
-  cursor: pointer;
-}
-.no-csspointerevents .nice-select .list {
-  display: none;
-}
-#toTop:after,
-.no-csspointerevents .nice-select.open .list {
-  display: block;
-}
-#toTop {
-  position: fixed;
-  right: 0;
-  visibility: hidden;
-  bottom: 25px;
-  margin: 0 25px 0 0;
-  z-index: 9999;
-  transform: scale(0.7);
-  width: 46px;
-  height: 46px;
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 1;
-  transition: all 0.3s;
-  border-radius: 50%;
-  font-size: 21px;
-  color: #fff;
-}
 .block-reveal img,
 a.social_bt {
   -moz-transition: all 0.3s ease-in-out;
 }
-#toTop.visible {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-}
-#toTop:after {
-  content: "\e899";
-  font-family: fontello;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-55%);
-  transform: translateY(-55%);
-}
+
+
 #sign-in-dialog .mfp-close:before,
 ul.bullets li:before,
 ul.list_ok li:before {
   font-family: ElegantIcons;
 }
-#toTop:hover {
-  background-color: #fc5b62;
-}
 
-
-.checkboxes label,
-a#forgot {
-  color: #999;
-}
 .hideShowPassword-wrapper {
   width: 100% !important;
 }
-a#forgot {
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
+
 
 .sign-in-wrapper {
   position: relative;

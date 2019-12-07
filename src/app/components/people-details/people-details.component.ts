@@ -32,6 +32,7 @@ export class PeopleDetailsComponent implements OnInit {
 			(data:any) => {
 				this.people=data;
 				this.getAllFilms();
+				this._loader.hide();
 		});
 	}
 	getAllFilms(){

@@ -32,6 +32,7 @@ import { PeoplesService } from './services/peoples.service';
 
 import { HttpClientModule } from '@angular/common/http';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { NgxSpinnerModule } from 'ngx-spinner'
 import { NzLayoutModule, NzDropDownModule, NzTabsModule, NzResultModule, NzBackTopModule, NZ_I18N, en_US, fr_FR, NzModalService, NzMessageService, NzI18nService, NzBadgeModule, NZ_DATE_CONFIG,NzCardModule, NzAvatarModule, NzModalModule, NzDividerModule, NzInputModule, NzButtonModule, NzIconModule, NzRateModule, NzDrawerModule } from 'ng-zorro-antd';
 
 
@@ -68,6 +69,7 @@ registerLocaleData(fr);
 		NzRateModule,
 		NzDrawerModule,
 		
+		NgxSpinnerModule,
 		HttpClientModule,
 		BrowserModule,
 		BrowserAnimationsModule,
