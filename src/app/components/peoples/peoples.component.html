@@ -9,22 +9,22 @@
 		<div class="row" >
 			<div class="col-12">
 				<ngx-slick-carousel #slickModal="slick-carousel" [config]="topSlideConfig" class="carousel">
-						<div  class="mr-2" ngxSlickItem 
-							[ngClass]="{'slide': true}"
-							style="width: 160px!important;"
-							*ngFor="let people of peoples; let index = index;">
-							<div >
-								<div class="">
-									<img style="width: 212px;height: auto;border-radius: 13px;" src="assets/layout/img/peoples/{{index}}.jpg">
-								</div>
-								<div class="f-bold c-txt-white text-center pt-1">
-									<span>
-										{{ people.name }}
-									</span>
-								</div>
+					<div  class="mr-2" ngxSlickItem 
+						[ngClass]="{'slide': true}"
+						style="width: 160px!important;"
+						*ngFor="let people of peoples; let index = index;">
+						<div >
+							<div class="">
+								<img style="width: 212px;height: auto;border-radius: 13px;" src="assets/layout/img/peoples/{{index}}.jpg">
+							</div>
+							<div class="f-bold c-txt-white text-center pt-1">
+								<span>
+									{{ people.name }}
+								</span>
 							</div>
 						</div>
-					</ngx-slick-carousel>
+					</div>
+				</ngx-slick-carousel>
 			</div>
 		</div>
 		<!--  The latest -->
