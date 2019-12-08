@@ -5,21 +5,6 @@
   margin-top: 64px;
 }
 
-.location-input:hover {
-  border-color: #ed3987 !important;
-  border-right-width: 1px !important;
-  outline: 0 !important;
-  transition: all 0.3s;
-}
-
-.location-input:focus {
-  border-color: #ed3987 !important;
-  border-right-width: 1px !important;
-  outline: 0 !important;
-  box-shadow: 0 0 0 2px rgba(224, 19, 114, 0.2) !important;
-  transition: all 0.3s;
-}
-
 .color-primary {
   color: #e01372 !important;
 }
