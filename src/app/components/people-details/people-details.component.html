@@ -1,12 +1,35 @@
 <div *ngIf="people"  class="body-style">  
 		<div class="container">
-			<div style="padding-top: 150px;" class="row">
-				<div class="col-md-12 col-12 col-lg-4 pb-4">
-					<h5 style="font-size: 32px;" class="text-white  f-bold">
-						People space
-						<br>{{people.name}}
-					</h5>
-					<hr class="c-small-left-hr bg-white">
+			<div  class="row padding-top">
+				<div class="col-md-12 col-12 col-lg-4 pb-2">
+					<div class="row">
+						<div class="col-lg-12 col-md-6 col-12">
+							<h5 style="font-size: 32px;" class="text-white  f-bold">
+								People space
+								<br>{{people.name}}
+							</h5>
+							<hr class="c-small-left-hr bg-white">
+						</div>
+						<div class="col-lg-12 col-md-6 col-12 pt-2">
+							<ul class="row f-bold text-white">
+								<li class="col-4  col-md-12 col-lg-12">
+									<i nz-icon nzType="user" nzTheme="outline"></i>
+									Gender : {{ people.gender }}
+								</li>
+								<li class="col-4 col-md-12 col-lg-12">
+									<i nz-icon nzType="colum-height" nzTheme="outline"></i>
+									Height : {{ people.height }}
+								</li>
+								<li class="col-4 col-md-12 col-lg-12">
+									<i nz-icon nzType="medicine-box" nzTheme="outline"></i>
+									Mass : {{ people.mass }}
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+
+					
 					<!-- <span class="c-txt-sm f-light text-white font-weight-bold">
 						{{ 'DASHBOARD.CONSULT_AT_ANY_TIME' | translate }}
 					</span> -->
@@ -30,7 +53,7 @@
 									<div class="box-film p-1">
 										<div class="row">
 											<!-- logo film -->
-											<div class="col-lg-3 col-md-3 col-4 pr-0 mr-0">
+											<div class="col-lg-3 col-md-2 col-4 pr-0 mr-0">
 												<figure class="text-center-img m-2" >
 													<a (click)="getOfferDetails(car,false)">
 														<img src="assets/layout/img/films/2.jpg" class="img-film">							
@@ -38,7 +61,7 @@
 												</figure>
 											</div>
 											<!-- film title -->
-											<div class="col-lg-9 col-md-9 col-8 p-2">
+											<div class="col-lg-9 col-md-10 col-8 pt-2 pb-2 pl-3 pr-2">
 												<div class="row">
 													<div class="col-12">
 														<h4 class="car-name mb-0">
@@ -49,37 +72,30 @@
 													</div>
 												</div>
 												<div class="row">
-													<div class="col-12">
-														<!-- <ul class="row car-caracteristics">
-															<li  class="col-3 m-0 p-0 caracteristics-li" >
-																<span class="icon-solid jerrycan"></span>
-																fffff
+													<div class="col-12 pt-2">
+														<ul class="row f-light film-caracteristics">
+															<li  class="col-12 col-md-6 m-0 p-0 caracteristics-li" >
+																<i class="c-txt-purple" nz-icon nzType="user" nzTheme="outline"></i>
+																<span class="pl-1 f-bold">Director </span> : {{film.director}}
 															</li>
 									
-															<li class="col-4 m-0 p-0 caracteristics-li" >
-																<span class="icon-solid car-gears-automatic"></span>
-																{{ 'SEARCH_RESULT.AUTOMATIC_GEARBOX' | translate }}
+															<li class="col-12 col-md-6 m-0 p-0 caracteristics-li" >
+																<i  class="c-txt-purple" nz-icon nzType="user-add" nzTheme="outline"></i>
+																<span class="f-bold"> Producer </span> : {{film.producer}}
 															</li>
 										
-															<li class="col-4 m-0 p-0 caracteristics-li" >
-																<span class="icon-solid car-gears"></span>
-																{{ 'SEARCH_RESULT.MANUAL_GEARBOX' | translate }}
+															<li class="col-12 col-md-6 m-0 p-0 caracteristics-li" >
+																<i class="c-txt-purple" nz-icon nzType="calendar" nzTheme="outline"></i>
+																<span class="f-bold">	Release : </span> {{film.created | date:'EEE, d MMM'}}
 															</li>
 										
-															<li class="col-5 m-0 p-0 caracteristics-li" title="{{ 'SEARCH_RESULT.AIR_CONDITIONING' | translate }}">
-																<span class="icon-solid air-conditioning"></span>
-																ffff
+															<li class="col-12 col-md-6 m-0 p-0 caracteristics-li">
+																<i class="c-txt-purple" nz-icon nzType="number" nzTheme="outline"></i>
+																<span class="pl-1 f-bold">Episode N° : </span> {{film.episode_id}}
 															</li>
-															<li class="col-3 m-0 p-0 caracteristics-li">
-																<span class="icon-solid car-seat"></span>
-																dddd
-															</li>
-															<li class="col-4 m-0 p-0 caracteristics-li">
-																<span class="icon-solid car-door"></span>
-																ddd
-															</li>
-														</ul> -->
+														</ul>
 													</div>	
+													
 												</div>
 											</div>
 										</div>

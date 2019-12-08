@@ -15,6 +15,17 @@
     text-align: center;
 }
 
+.film-caracteristics{
+    margin: 0 !important;
+    padding: 5px 0 5px 0 !important;
+    column-count: 2 !important;
+    border-top: unset !important;
+}
+
+.padding-top{
+    padding-top: 150px;
+}
+
 .img-film{
     width: auto;
     height: auto !important;
@@ -41,6 +52,9 @@
     }
     .text-center-img{
         text-align: left;
+    }
+    .padding-top{
+        padding-top: 100px;
     }
 }
 
