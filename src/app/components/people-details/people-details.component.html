@@ -36,15 +36,15 @@
 									<div class="box-film p-1">
 										<div class="row">
 											<!-- logo film -->
-											<div class="col-lg-3 col-md-2 col-4 pr-0 mr-0">
-												<figure class="text-center-img m-2" >
+											<div class="col-lg-3 col-md-4 col-6 pr-0 mr-0">
+												<figure class="text-center m-2" >
 													<a >
-														<img src="assets/layout/img/films/2.jpg" class="img-film">							
+														<img src="assets/layout/img/cars/1.jpg" class="img-cars">							
 													</a>
 												</figure>
 											</div>
 											<!-- film title -->
-											<div class="col-lg-9 col-md-10 col-8 pt-2 pb-2 pl-3 pr-2">
+											<div class="col-lg-9 col-md-8 col-6 pt-2 pb-2 pl-3 pr-2">
 												<div class="row">
 													<div class="col-12">
 														<h4 class="car-name mb-0">
@@ -58,23 +58,23 @@
 													<div class="col-12 pt-2">
 														<ul class="row f-light film-caracteristics">
 															<li  class="col-12 col-md-6 m-0 p-0 caracteristics-li" >
-																<i class="c-txt-purple" nz-icon nzType="user" nzTheme="outline"></i>
-																<!-- <span class="pl-1 f-bold">Director </span> : {{film.director}} -->
+																<i  class="c-txt-purple" nz-icon nzType="team" nzTheme="outline"></i>
+																<span class="pl-1 f-bold">Passengers </span> : {{car.passengers}}
 															</li>
 									
 															<li class="col-12 col-md-6 m-0 p-0 caracteristics-li" >
-																<i  class="c-txt-purple" nz-icon nzType="user-add" nzTheme="outline"></i>
-																<!-- <span class="f-bold"> Producer </span> : {{film.producer}} -->
+																<i  class="c-txt-purple" nz-icon nzType="car" nzTheme="outline"></i>
+																<span class="f-bold"> Model </span> : {{car.model}}
 															</li>
 										
 															<li class="col-12 col-md-6 m-0 p-0 caracteristics-li" >
-																<i class="c-txt-purple" nz-icon nzType="calendar" nzTheme="outline"></i>
-																<!-- <span class="f-bold">	Release : </span> {{film.created | date:'EEE, d MMM'}} -->
+																<i class="c-txt-purple" nz-icon nzType="hourglass" nzTheme="outline"></i>
+																<span class="f-bold">	Consumables : </span> {{car.consumables }}
 															</li>
 										
 															<li class="col-12 col-md-6 m-0 p-0 caracteristics-li">
-																<i class="c-txt-purple" nz-icon nzType="number" nzTheme="outline"></i>
-																<!-- <span class="pl-1 f-bold">Episode N° : </span> {{film.episode_id}} -->
+																<i class="c-txt-purple" nz-icon nzType="dashboard" nzTheme="outline"></i>
+																<span class="pl-1 f-bold">Speed : </span> {{car.max_atmosphering_speed}} Km/s
 															</li>
 														</ul>
 													</div>	

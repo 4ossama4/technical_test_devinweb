@@ -38,6 +38,13 @@
     border-radius: 13px;
 }
 
+.img-cars{
+    width: 100%;
+    height: auto !important;
+    max-width:459px;
+    border-radius: 13px;
+}
+
 .img-no-result{
     width: 100%;
     height: auto !important;
