@@ -16,6 +16,7 @@ export class PeopleDetailsComponent implements OnInit {
 	public people :People;
 	public films :any[]=[];
 	public cars :any[]=[];
+	public starships :any[]=[];
 
 	constructor(private _loader: NgxSpinnerService,private _peoplesService: PeoplesService,private route: ActivatedRoute) { 
 		this._loader.show();

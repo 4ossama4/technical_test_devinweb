@@ -91,12 +91,15 @@
 							</div>
 						</nz-tab>
 						<nz-tab nzTitle="Starships">
-							<div class="tab-body">
+							<div class="tab-body" *ngIf="starships.length > 0">
 								Content of Tab Pane 2
+							</div>
+							<div class="tab-body-no-result"  *ngIf="starships.length == 0">
+								<img src="assets/layout/img/noresult.png" class="img-no-result">			
 							</div>
 						</nz-tab>
 						<nz-tab nzTitle="Films">
-							<div class="tab-body">
+							<div *ngIf="films.length > 0" class="tab-body">
 								<div *ngFor="let film of films" class="col-md-12 p-2">
 									<div class="box-film p-1">
 										<div class="row">
@@ -150,6 +153,9 @@
 									</div>
 									
 								</div>
+							</div>
+							<div class="tab-body-no-result"  *ngIf="films.length == 0">
+								<img src="assets/layout/img/noresult.png" class="img-no-result">			
 							</div>
 						</nz-tab>
 						 
