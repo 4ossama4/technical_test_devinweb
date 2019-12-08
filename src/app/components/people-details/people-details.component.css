@@ -10,6 +10,11 @@
     overflow-x: hidden;
     
 }
+.tab-body-no-result{
+    background-color: #1c1b4b!important;
+    border-radius: 13px; 
+    /* height: 470px;   */
+}
 
 .text-center-img{
     text-align: center;
@@ -32,6 +37,14 @@
     max-height: 195px;
     border-radius: 13px;
 }
+
+.img-no-result{
+    width: 100%;
+    height: auto !important;
+    max-width: 395px;
+    border-radius: 13px;
+}
+
 .box-film{
     border: 1px solid ;
     border-radius: 13px;

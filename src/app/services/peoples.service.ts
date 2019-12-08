@@ -22,9 +22,14 @@ export class PeoplesService {
 		return this.http.get<People>("https://swapi.co/api/people/"+id);
 	}
 
-	 // get all peoples
+	 // get all films
 	 getFilms(){
 		return this.http.get<any[]>("https://swapi.co/api/films/");
+	}
+
+	// get all cars
+	getCars(){
+		return this.http.get<any[]>("https://swapi.co/api/vehicles/");
 	}
 
 }

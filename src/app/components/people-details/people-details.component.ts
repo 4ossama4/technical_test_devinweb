@@ -15,6 +15,7 @@ export class PeopleDetailsComponent implements OnInit {
 
 	public people :People;
 	public films :any[]=[];
+	public cars :any[]=[];
 
 	constructor(private _loader: NgxSpinnerService,private _peoplesService: PeoplesService,private route: ActivatedRoute) { 
 		this._loader.show();
@@ -32,7 +33,8 @@ export class PeopleDetailsComponent implements OnInit {
 			(data:any) => {
 				this.people=data;
 				this.getAllFilms();
-				this._loader.hide();
+				this.getAllCars();
+				
 		});
 	}
 	getAllFilms(){
@@ -45,7 +47,21 @@ export class PeopleDetailsComponent implements OnInit {
 						}
 					});
 				});
-				console.log('this.films',this.films)
+		});
+	}
+	getAllCars(){
+		this._peoplesService.getCars().subscribe(
+			(data:any) => {
+				data['results'].forEach(car => {
+					this.people.vehicles.forEach(vehicule => {
+						if(car.url == vehicule){
+							this.cars.push(car)
+						}
+					});
+				});
+				this._loader.hide();
+				console.log('cars',data['results']);
+			//	console.log('this.cars',this.cars)
 		});
 	}
 
